@@ -9,9 +9,10 @@ using System.Web.Http;
 
 namespace FamilyTree.Controllers
 {
+    [RoutePrefix("api/dassauGenOne")]
     public class DassauGenOneController : ApiController
     {
-        [Route, HttpPost]
+        [Route(""), HttpPost]
         public HttpResponseMessage AddDassauGenOne(DassauGenOneDto dassauGenOne)
         {
             var repository = new DassauGenOneRepository();
